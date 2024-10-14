@@ -85,9 +85,40 @@
                     data: "nama_orang_tua",
                 },
                 {
-                    title: "Berat Badan Lahir (Kg)",
-                    data: "bb_lahir",
-                },
+                    title: "Usia (bulan)",
+                    data: function(row) {
+                        const monthIndex = $("#bulan").val();
+                        switch (monthIndex) {
+                            case "januari":
+                                return row.usia1;
+                            case "februari":
+                                return row.usia2;
+                            case "maret":
+                                return row.usia3;
+                            case "april":
+                                return row.usia4;
+							case "mei":
+                                return row.usia5;
+							case "juni":
+                                return row.usia6;
+							case "juli":
+                                return row.usia7;
+							case "agustus":
+                                return row.usia8;
+							case "september":
+                                return row.usia9;
+							case "oktober":
+                                return row.usia10;
+							case "november":
+                                return row.usia11;
+							case "desember":
+                                return row.usia12;
+                            // Tambahkan kasus untuk bulan lainnya jika perlu
+                            default:
+                                return "Data Tidak Tersedia";
+                        }
+                    }
+				},
                 {
                     title: "Berat Badan (Kg)",
                     data: function(row) {
