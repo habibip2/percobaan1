@@ -26,7 +26,78 @@
     />
     <title>Data Balita Posyandu</title>
   </head>
+  <style>
+	body {
+	background-color : white;
+	}
+	
+	.container1 .navbar{
+		position: fixed;
+		padding-top: 10px;
+		margin-bottom: 80px;
+		display: flex;
+		color: green;
+	}
+	
+	.navbar{
+		padding-left: 30px;
+		background-color: #008000;
+		width: 100%;
+		z-index: 1000;
+	}
+	
+	.navbar img{
+		height: 7rem;
+		width: 8.5rem;
+		cursor: pointer;
+	}
+	
+	.navbar h3{
+		cursor: pointer;
+		color: Orange;
+		padding-left: 10px;
+	}
+	
+	.navbar .navbar-item{
+		align-item: right;
+		margin-right: 2rem;
+		margin-left: 12rem;
+		margin-top: auto;
+		margin-bottom: 2rem;
+		font-family: arial, sans-serif;
+		font-size: 18px;
+		color: yellow;
+	}
+	
+	.navbar .navbar-item:hover{
+		color: white;
+		text-decoration: none;
+	}
+	
+	
+	.container h3{
+		margin-top: 120px;
+	}
+	
+	@media (max-width: 768px) {
+    .navbar {
+        width: 75%; /* buat navbar penuh lebar */
+        left: 0; /* posisikan di sisi kiri */
+		}
+	}
+  </style>
   <body">
+	<div class="container1">
+		<div class="navbar">
+			<image src="3573.png"></image>
+			<h3>PUSKESMAS MOJOLANGU</h3>
+			<a href="#" class="navbar-item">Home</a>
+			<a href="#" class="navbar-item">About</a>
+			<a href="#" class="navbar-item">Services</a>
+			<a href="#" class="navbar-item">Contact</a>
+		</div>
+		
+	</div>
     <div class="container">
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
